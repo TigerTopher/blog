@@ -1,0 +1,18 @@
+version: 0.1
+frontend:
+  phases:
+    build:
+      commands:
+        - wget https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_0.57.2_Linux-64bit.tar.gz
+        - tar -xf hugo_extended_0.57.2_Linux-64bit.tar.gz hugo
+        - mv hugo /usr/bin/hugo
+        - rm -rf hugo_extended_0.57.2_Linux-64bit.tar.gz
+        - npm install postcss-cli
+        - npm install autoprefixer
+        - hugo
+  artifacts:
+    baseDirectory: public
+    files:
+      - '**/*'
+  cache:
+    paths: []
