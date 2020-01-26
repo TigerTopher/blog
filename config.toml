@@ -16,7 +16,7 @@ paginate = 5
 [languages]
   [languages.en]
     title = "Topher Vizcarra"
-    subtitle = "A simple theme for Hugo"
+    subtitle = "All about Security, Software, and Infra"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
