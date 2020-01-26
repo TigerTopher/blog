@@ -13,6 +13,6 @@ frontend:
   artifacts:
     baseDirectory: public
     files:
-      - '**/*'
+      - "**/*"
   cache:
     paths: []

@@ -1,14 +1,17 @@
----
-title: "About"
-date: 2018-02-13T13:42:49-05:00
----
++++
+title = "About"
+date = "2019-12-15"
++++
 
-Hello, I'm Sam. I'm a theme for [Hugo](https://gohugo.io/). I'm an extremely customizable, content-focused theme that lets you showcase your work your way.
+Hello there! My name is...
 
-I have slick minimalist templates for list pages (such as a list of blog posts) and single pages (a page to read one blog post). You can use tags on your content, and view content by tags.
+```bash
+$ whoami
+topher
+```
 
-I also have a simple responsive gallery built with CSS grid. It'll look great on any screen, and all you have to do is provide a folder of images.
+I'm a 🇵🇭Filipino Security Engineer currently based in Sydney, Magical Land of 🇦🇺Oz.
 
-I'm built and maintained by [Victoria Drake](https://victoria.dev). Here's her [GitHub](https://github.com/victoriadrake).
+If you want to send me a personal message you can find me on [Twitter](https://twitter.com/TopherVizcarra).
 
-This page uses the default `single.html` template.
+P.S. Shoutouts to [Panr](]https://twitter.com/panr) for this bloody cool theme!
