@@ -1,6 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 theme = "hello-friend"
+enableEmoji = "true"
 paginate = 5
 
 [params]
@@ -11,7 +12,7 @@ paginate = 5
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
   # Enable to show reading time in minutes for posts
-  showReadingTime = true
+  showReadingTime = false
 
 [languages]
   [languages.en]
