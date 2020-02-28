@@ -1,6 +1,6 @@
 +++
 title = "Tech Blog Speed Run: Hugo and AWS Amplify"
-date = "2020-02-18"
+date = "2021-02-18"
 cover = "img/2020-02-18-hugo-aws-amplify.png"
 description = "Publish your Tech Blog in under 28:59 minutes or less with Hugo and AWS Amplify."
 +++
