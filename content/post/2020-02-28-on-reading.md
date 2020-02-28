@@ -1,6 +1,6 @@
 +++
 title = "On Reading"
-date = "2019-12-28"
+date = "2020-02-28"
 cover = "img/2020-02-28-reading-list-cover.png"
 description = "Discovering my love for reading, reading habits, and my 2020 reading list."
 +++
