@@ -88,7 +88,7 @@ src="/img/2020-02-28-gif-3.gif"
 alt="Gif_3"
 style="display: block;margin-left: auto;margin-right: auto;width: 50%;">}}
 
-For post-dining reading, I stay a bit more time in the dining table, open my laptop, and have a split-screen of the e-book I'm reading and my note-taking software.
+For post-dinner reading, I stay a bit more time in the dining table, open my laptop, and have a split-screen of the e-book I'm reading and my note-taking software.
 
 **Pro-tip: Put on [Lo-Fi music](https://open.spotify.com/show/7MctELagHSo5Fnvwh7aCfM?si=e3mPI1I2QfKubLvNDjyWdg) for optimal reading experience.**
 
