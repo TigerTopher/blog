@@ -1,7 +1,7 @@
 +++
 title = "Tech Blog Speed Run: Hugo and AWS Amplify"
-date = "2021-02-18"
-cover = "img/2020-02-18-hugo-aws-amplify.png"
+date = "2020-02-18"
+cover = "img/hugo-amplify-cover.png"
 description = "Publish your Tech Blog in under 28:59 minutes or less with Hugo and AWS Amplify."
 +++
 
@@ -26,7 +26,6 @@ Although this will be quick, you will certainly be picking up a thing or two as 
 
 - Hosting blog site in Github
 - Using Static-site generators
-- CI/CD: Writing basic pipeline scripts
 - Setting up a domain using Route53
 
 ## Prerequisites
@@ -133,27 +132,66 @@ If you are satisfied with your setup, feel free to commit your work and do a `gi
 
 ### 📜 Quest #2: Setup AWS Amplify
 
-Coming soon.
-
-<!--
-#### AWS Amplify
+#### What is AWS Amplify?
 
 > AWS Amplify is a combination of client library, CLI toolchain, and a Console for continuous deployment and hosting. The Amplify CLI and library allow developers to get up & running with full-stack cloud-powered applications with features like authentication, storage, serverless GraphQL or REST APIs, analytics, Lambda functions, & more. The Amplify Console provides continuous deployment and hosting for modern web apps (single page apps and static site generators). Continuous deployment allows developers to deploy updates to their web app on every code commit to their Git repository. Hosting includes features such as globally available CDNs, easy custom domain setup + HTTPS, feature branch deployments, and password protection.
 
-Hugo was kind enough to provide us with a guide to setup Hugo for AWS Amplify too: [Hosting on AWS Amplify](https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/).
+Yada yada! That's a lengthy definition for a service! Anyway, the important thing to pick up here is that we're only going to use a subset of the services AWS Amplify provides, namely:
 
-In the guide
-What is a CI/CD Pipeline?
+- continuous deployment and hosting for modern web apps (single page apps and static site generators)
+- Hosting includes features such as globally available CDNs
+- HTTPS
+- feature branch deployments
+- easy custom domain setup
 
-> ...
+That said, our side-quests will be:
 
-You can also commit your pipeline file in the root of your repository and name it `amplify.yml`. For my setup, I needed to install certain NPM package to setup.
+1. Create AWS Amplify by connecting our repository branch
+2. Commit build settings
 
-> What's a pipeline yml.
+---
 
-Once you finish the guide, you should now have a link an amplify link to your app such as https://master.unique-id.amplifyapp.com.
+#### ⚔️ Create AWS Amplify by connecting our repository branch
 
-Next step here will be to register our own domain. -->
+Hugo was kind enough to provide us with a guide to setup Hugo for AWS Amplify too: [Hosting on AWS Amplify](https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/). Simply follow these steps. Once your done, come back here and let's review what we did!
+
+After that, you probably have your own project URI in this format: `https://master.unique-id.amplifyapp.com`.
+
+---
+
+#### ⚔️ Commit build settings
+
+In the last part of the last guide, you configured your App build settings. Instead of defining this in the config of our AWS Amplify app, we can commit this in the root directory of our repository with the filename: `amplify.yml`.
+
+As an example, I placed my `amplify.yml` file here: https://github.com/TigerTopher/blog/blob/master/amplify.yml.
+My build settings is a little bit different with what Hugo has:
+
+Let's break it down what's in the build config:
+
+```lang=yml
+version: 0.1
+frontend:
+  phases:
+    build:
+      commands:
+        - wget https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_0.57.2_Linux-64bit.tar.gz
+        - tar -xf hugo_extended_0.57.2_Linux-64bit.tar.gz hugo
+        - mv hugo /usr/bin/hugo
+        - rm -rf hugo_extended_0.57.2_Linux-64bit.tar.gz
+        - npm install postcss-cli
+        - npm install autoprefixer
+        - hugo
+  artifacts:
+    baseDirectory: public
+    files:
+      - "**/*"
+  cache:
+    paths: []
+```
+
+For my setup, I needed to install certain NPM package to setup hence the added steps : npm installs
+
+The next step here is to register our own domain.
 
 ---
 

@@ -22,7 +22,7 @@ style="display: block;margin-left: auto;margin-right: auto;width: 50%;">}}
 
 After years of considering reading as my waterloo, my perception of my own capacity changed when I was in Uni. To survive, I needed to love books.
 
-While some students were reading slides when reviewing, I knew I need to read the actual books that my professors are reading. The goal is to deeply engage in the material, so as to reach a point where even I could teach the subject domain. A few semesters in, and I did not really realise that I have fallen in love with reading.
+While some students were reading slides when reviewing, I knew I need to read the actual books that my professors are reading. The goal is to deeply engage in the material, so as to reach a point where even I could teach the subject domain. A few semesters in, and I did not realise that I have already fallen in love with reading.
 
 **Quick Dedication:** To Leithold's TC7, Theory of Computation, University Physics, CLRS, and the other whitepapers that ignited me - you're the real MVP.
 
@@ -81,14 +81,14 @@ Setting a system is an amazing way to build a routine for reading that sticks. H
 | Train ride          | 2 \* 40 minutes  | Non-tech book           |
 | Post-dinner reading | At least an hour | Tech book               |
 
-The common thing between these three reading environments is that they all are controlled spaces. I can't really do much while walking to the station except to listen. Train rides are amazing as it serves as my off-the-grid moments where I could focus on my book. Can't really do much but to read, look outside, then read more.
+The reason why these three reading environments work for me is because they are controlled spaces. I can't really do much while walking to the station except to listen. Train rides are amazing as it serves as my off-the-grid moments where I could focus on my book. There is nothing but to read, maybe look outside, then read some more.
 
 {{< image
 src="/img/2020-02-28-gif-3.gif"
 alt="Gif_3"
 style="display: block;margin-left: auto;margin-right: auto;width: 50%;">}}
 
-For post-dinner reading, I stay a bit more time in the dining table, open my laptop, and have a split-screen of the e-book I'm reading and my note-taking software.
+For post-dinner reading, I stay a bit more time in the my usual spot, open my laptop, and have a split-screen of the e-book I'm reading and my note-taking software.
 
 **Pro-tip: Put on [Lo-Fi music](https://open.spotify.com/show/7MctELagHSo5Fnvwh7aCfM?si=e3mPI1I2QfKubLvNDjyWdg) for optimal reading experience.**
 
